@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+
+# Backend
+backend/node_modules/
+backend/.env
+backend/uploads/
+
+
+# Frontend
+frontend/node_modules/
+frontend/.env
