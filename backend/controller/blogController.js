@@ -52,7 +52,7 @@ async function getBlog(req,res) {
 async function getBlogById(req,res) {
     try {
         const {id}=req.params
-        const blog=await Blog.findById(id).populate("comments")
+        const blog=await Blog.findById(id).populate("comments").populate("creator")
         return res.status(200).json({
             message:"blog fetched successfully",
             blog,
